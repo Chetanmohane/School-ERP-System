@@ -9,7 +9,7 @@ const isLocalhost = Boolean(
 const API = axios.create({
   baseURL: isLocalhost 
     ? 'http://localhost:5001' 
-    : 'https://backend-three-sigma-29.vercel.app',
+    : 'https://angry-owls-lay.loca.lt',
 });
 
 API.interceptors.request.use((req) => {
