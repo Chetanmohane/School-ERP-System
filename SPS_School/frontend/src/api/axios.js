@@ -9,7 +9,7 @@ const isLocalhost = Boolean(
 const API = axios.create({
   baseURL: isLocalhost 
     ? 'http://localhost:5001' 
-    : 'https://sps-school-backend.onrender.com',
+    : 'https://backend-three-sigma-29.vercel.app',
 });
 
 API.interceptors.request.use((req) => {
