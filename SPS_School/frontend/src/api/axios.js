@@ -17,6 +17,7 @@ API.interceptors.request.use((req) => {
   if (token) {
     req.headers.Authorization = `Bearer ${token}`;
   }
+  req.headers['Bypass-Tunnel-Reminder'] = 'true';
   return req;
 });
 
